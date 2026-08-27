@@ -1,0 +1,6 @@
+{
+  "name": "Retirement Registration 2026",
+  "description": "ระบบลงทะเบียนเข้าร่วมงานเกษียณอายุราชการ ประจำปีงบประมาณ 2569",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "registration": {
+      "title": "Retirement Registration",
+      "description": "Registration for retirement party 2026",
+      "type": "object",
+      "properties": {
+        "firstName": { "type": "string", "description": "First name", "maxLength": 100 },
+        "lastName": { "type": "string", "description": "Last name", "maxLength": 100 },
+        "title": { "type": "string", "description": "Title", "maxLength": 50 },
+        "department": { "type": "string", "description": "Department", "maxLength": 100 },
+        "position": { "type": "string", "description": "Position", "maxLength": 100 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["firstName", "lastName", "title", "department", "position"]
+    }
+  },
+  "firestore": {
+    "/registrations/{registrationId}": {
+      "schema": "registration",
+      "description": "Collection of event registrations"
+    }
+  }
+}
